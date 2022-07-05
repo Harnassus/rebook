@@ -1,13 +1,13 @@
 import { Box } from '@mui/material'
 import React from 'react'
-import Header from '../../components/Header'
-import Navbar from "../../components/Navbar"
+import Header from '../../components/Header/Header.jsx'
+import Navbar from '../../components/Navbar/Navbar.jsx'
 const Home = () => {
   return (
-    <Box>
+    <div >
     <Navbar />
     <Header />
-    </Box>
+    </div>
   )
 }
 

@@ -6,14 +6,9 @@ import {
 import Home from "./pages/home/Home";
 import List from './pages/list/List';
 import Hotel from './pages/hotel/Hotel';
-import { ThemeProvider } from "@mui/material";
-import theme from "./theme"
 
 function App() {
   return (
-    <ThemeProvider theme={theme}>
-
-    
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
@@ -21,7 +16,6 @@ function App() {
         <Route path="/hotels/:id" element={<Hotel />} />
       </Routes>
       </BrowserRouter>
-      </ThemeProvider>
   );
 }
 
